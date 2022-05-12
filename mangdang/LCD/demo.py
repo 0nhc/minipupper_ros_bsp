@@ -23,7 +23,7 @@ def main():
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 30)
     draw = ImageDraw.Draw(image)
     text = 'IP: '+str(ip)
-    draw.text((25,90), text, font=font, fill="#000000", spacing=0, align='left')
+    draw.text((20,95), text, font=font, fill="#000000", spacing=0, align='left')
     disp.display(image)
 try:
     main()
