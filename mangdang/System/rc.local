@@ -18,6 +18,7 @@ do
 	sudo echo  4000000 > /sys/class/pwm/pwmchip0/pwm$i/period
 	sudo chmod  777  /sys/class/pwm/pwmchip0/pwm$i/duty_cycle
 done
+sudo chmod 777 /sys/bus/i2c/devices/3-0050/eeprom
 
 # init the Bluetooth
 sudo hciattach /dev/ttyAMA0 bcm43xx 115200 noflow -
